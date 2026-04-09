@@ -1,0 +1,48 @@
+# Laravel core
+/vendor
+/node_modules
+/public/storage
+/storage/*.key
+
+# Environment files (VERY IMPORTANT)
+/.env
+.env.backup
+.env.production
+
+# Logs & cache
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/bootstrap/cache/*
+
+# Exceptions (keep these)
+!/storage/framework/cache/.gitignore
+!/storage/framework/sessions/.gitignore
+!/storage/framework/views/.gitignore
+
+# Composer
+composer.lock
+
+# NPM
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Testing
+/phpunit.result.cache
+
+# Misc
+*.log
