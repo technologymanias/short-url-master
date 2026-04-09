@@ -1,0 +1,22 @@
+
+# Short URL Service
+
+# Steps to run the app
+
+composer install
+npm install
+npm run build
+cp .env.example .env
+php artisan key:generate
+touch database/database.sqlite
+
+Edit .Env :  DB_CONNECTION=sqlite
+DB_DATABASE=/absolute/path/to/your/project/database/database.sqlite
+
+php artisan migrate --seed
+php artisan serve
+
+Visit http://localhost:8000
+
+
+Login credentials are role@example.com and password.
